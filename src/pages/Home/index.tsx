@@ -19,7 +19,7 @@ export function Home() {
 
   return (
     <Container maxWidth="sm" className={classes.offset}>
-      <></>
+      Home
     </Container>
   );
 }

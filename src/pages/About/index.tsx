@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Container from "@material-ui/core/Container";
 
-import { updatePageTitle } "../../components/Navigation/navigationSlice";
+import { updatePageTitle } from "../../components/Navigation/navigationSlice";
 import { localValue } from "../../components/Language/languageSlice";
 
 import { locals } from "../../app/locals";
@@ -27,7 +27,7 @@ export function About() {
             role="img"
             style={{ fontSize: "80px", display: "block", textAlign: "center" }}
           >
-            💎
+            👨🏻‍💻
           </span>
         </h1>
         <Typography variant="h6" component="h1">
