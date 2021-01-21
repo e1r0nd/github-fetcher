@@ -243,7 +243,7 @@ export const restoreFavorites = () => (dispatch: Dispatch) => {
       dispatch(populateFavorites(favorites));
     }
   } catch (error) {
-    console.log("BROKEN BASKET!");
+    console.log("BROKEN FAVORITES!");
     console.log(error.response);
   }
 };

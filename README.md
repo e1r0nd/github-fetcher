@@ -22,5 +22,3 @@
 1. Add more custom parameters for fetch & search
 1. Fix the position of Search bar
 1. Provide more details about a repo and an author via a modal window
-
-## Notes regarding the task description
