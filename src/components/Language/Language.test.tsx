@@ -12,7 +12,7 @@ test("About page should contains English heading on load", () => {
     </Provider>
   );
 
-  expect(getByText(/Check/i)).toBeInTheDocument();
+  expect(getByText(/fetcher/i)).toBeInTheDocument();
 });
 
 test("About page should contains Russian heading after switch", () => {
@@ -24,5 +24,5 @@ test("About page should contains Russian heading after switch", () => {
   );
   fireEvent.click(screen.getByText("Русский"));
 
-  expect(screen.getByText(/Проверить/i)).toBeInTheDocument();
+  expect(screen.getByText(/сборщик/i)).toBeInTheDocument();
 });

@@ -16,8 +16,11 @@
 ## Future improvements
 
 1. Change favicon
-2. Replace `console.log` with an appropriate logger
-3. Add pagination for the List
-4. Add more custom parameters for fetch
+1. Replace `console.log` with an appropriate logger
+1. Add pagination for the List
+1. Refactor About and Home to make one general page wrapper
+1. Add more custom parameters for fetch & search
+1. Fix Search bar
+1. Provide more details about repo and author via a modal window
 
 ## Notes regarding the task description
