@@ -22,4 +22,8 @@ export const en = {
     unstarred: "Repository has been unstarred!",
     noresults: "No results! Something went wrong?",
   },
+  search: {
+    searchquery: "Search query...",
+    language: "Language",
+  },
 };

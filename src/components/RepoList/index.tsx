@@ -5,10 +5,11 @@ import { useSnackbar } from "notistack";
 
 import { useStyles } from "./styles";
 import {
-  listValue,
+  listSliceValue,
   addToFavorites,
   removeFromFavorites,
   RepoType,
+  setProgrammingLanguage,
 } from "./repoSlice";
 import { localValue } from "../../components/Language/languageSlice";
 import { locals } from "../../app/locals";
@@ -20,7 +21,7 @@ export function RepoList() {
   const dispatch = useDispatch();
   const { enqueueSnackbar } = useSnackbar();
 
-  const list = useSelector(listValue);
+  const listSlice = useSelector(listSliceValue);
 
   function handleAction(repo: RepoType) {
     if (repo.is_favorite) {
@@ -36,11 +37,15 @@ export function RepoList() {
     }
   }
 
+  function handleLanguage(lang: string) {
+    dispatch(setProgrammingLanguage(lang));
+  }
+
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-        {list.length ? (
-          list.map((repo) => (
+        {listSlice.length ? (
+          listSlice.map((repo) => (
             <Grid item xs={12} key={repo.id}>
               <Card>
                 <RepoItem repo={repo} />
@@ -60,7 +65,10 @@ export function RepoList() {
                     {locals[local].repositories.learnmore}
                   </Link>
                   {!!repo.language && (
-                    <Chip className={classes.language} label={repo.language} />
+                    <Chip
+                      label={repo.language}
+                      onClick={() => handleLanguage(repo.language)}
+                    />
                   )}
                 </CardActions>
               </Card>

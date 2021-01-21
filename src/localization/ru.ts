@@ -22,4 +22,8 @@ export const ru = {
     unstarred: "Репозиторий удален из избранного!",
     noresults: "Нет результата! Что-то пошло не так?",
   },
+  search: {
+    searchquery: "Поисковый запрос...",
+    language: "Язык",
+  },
 };

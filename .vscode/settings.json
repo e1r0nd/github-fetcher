@@ -5,6 +5,7 @@
         "noresults",
         "notistack",
         "reduxjs",
+        "searchquery",
         "unstarred"
     ]
 }

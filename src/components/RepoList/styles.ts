@@ -8,9 +8,5 @@ export const useStyles = makeStyles((theme: Theme) =>
     learnmore: {
       textTransform: "uppercase",
     },
-    language: {
-      display: "flex",
-      justifySelf: "end",
-    },
   })
 );
