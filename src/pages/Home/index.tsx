@@ -7,6 +7,7 @@ import { localValue } from "../../components/Language/languageSlice";
 
 import { locals } from "../../app/locals";
 import { useStyles } from "./styles";
+import { RepoList } from "../../components/RepoList";
 
 export function Home() {
   const classes = useStyles();
@@ -19,7 +20,8 @@ export function Home() {
 
   return (
     <Container maxWidth="sm" className={classes.offset}>
-      Home
+      {/* <Search /> */}
+      <RepoList />
     </Container>
   );
 }

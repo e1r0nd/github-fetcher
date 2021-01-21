@@ -6,11 +6,13 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import { store } from "./app/store";
+import { InitApp } from "./init";
 
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline />
     <Provider store={store}>
+      <InitApp />
       <BrowserRouter>
         <App />
       </BrowserRouter>

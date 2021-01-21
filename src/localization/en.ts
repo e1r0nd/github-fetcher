@@ -14,4 +14,12 @@ export const en = {
       "To keep things simple, the starring won’t be sent back to GitHub’s servers but just stored in localStorage.",
     ],
   },
+  repositories: {
+    start: "Star",
+    unstar: "Unstar",
+    learnmore: "Learn more",
+    starred: "Repository has been stared!",
+    unstarred: "Repository has been unstarred!",
+    noresults: "No results! Something went wrong?",
+  },
 };

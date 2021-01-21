@@ -2,6 +2,7 @@ import { makeStyles, Theme } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme: Theme) => ({
   footerWrapper: {
+    backgroundColor: theme.palette.background.default,
     borderTop: `1px solid ${theme.palette.divider}`,
     width: "100%",
     display: "flex",
